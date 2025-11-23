@@ -1,0 +1,25 @@
+name:  Test de Robustesse
+
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
+jobs:
+  test-docker-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v3
+
+      - name:  Test de construction Docker
+
+        run: docker build . --file Dockerfile --tag mon-bot-test
+
+      - name:  Vérification simple
+
+        run: docker run mon-bot-test python --version
