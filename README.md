@@ -1,9 +1,9 @@
-# 🤖 Python Automation Boilerplate (Dockerized)
+# Python Automation Boilerplate (Dockerized)
 
 Ce projet est une base professionnelle et robuste pour le développement de bots, scripts d'automatisation et pipelines ETL.
 Il est conçu pour être **sécurisé**, **portable** (via Docker) et **facilement observable** (Logs standardisés).
 
-## 🚀 Fonctionnalités Clés
+## Fonctionnalités Clés
 
 * **📦 100% Dockerisé** : Fonctionne de manière identique en local, sur un VPS ou sur le Cloud (GCP/AWS).
 * **🔒 Sécurité native** : Gestion des secrets (API Keys, Mots de passe) via variables d'environnement (`.env`), jamais hardcodés.
@@ -11,14 +11,14 @@ Il est conçu pour être **sécurisé**, **portable** (via Docker) et **facileme
 * **🛡️ Gestion d'erreurs** : Structure `try/catch` globale pour éviter les crashs silencieux et permettre l'alerting.
 * **🧩 Architecture Modulaire** : Séparation claire entre le lanceur (`main.py`) et la logique métier (`logic.py`).
 
-## 🛠️ Stack Technique
+##Stack Technique
 
 * **Python 3.9 Slim** (Image légère)
 * **Docker** (Conteneurisation)
 * **Python-dotenv** (Configuration)
 * **Requests / Pandas** (Traitement de données - *selon besoins*)
 
-## 📂 Structure du Projet
+## Structure du Projet
 
 ```bash
 mon-bot-template/
@@ -42,6 +42,7 @@ Créez un fichier .env à la racine du projet et ajoutez vos variables :
 Ini, TOML
 ENV_TYPE=Production
 API_KEY=votre_cle_secrete_ici
+
 3. Build & Run (Via Docker)
 
 Étape 1 : Construire l'image
