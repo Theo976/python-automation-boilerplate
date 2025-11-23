@@ -16,7 +16,7 @@ Il est conçu pour être **sécurisé**, **portable** (via Docker) et **facileme
 * **Python 3.9 Slim** (Image légère)
 * **Docker** (Conteneurisation)
 * **Python-dotenv** (Configuration)
-* **Requests / Pandas** (Traitement de données - *selon besoins*)
+* **Requests / Pandas** (Traitement de données -- *selon besoins*)
 
 ## Structure du Projet
 
