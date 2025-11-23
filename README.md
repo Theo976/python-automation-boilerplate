@@ -5,11 +5,11 @@ Il est conçu pour être **sécurisé**, **portable** (via Docker) et **facileme
 
 ## Fonctionnalités Clés
 
-* **📦 100% Dockerisé** : Fonctionne de manière identique en local, sur un VPS ou sur le Cloud (GCP/AWS).
-* **🔒 Sécurité native** : Gestion des secrets (API Keys, Mots de passe) via variables d'environnement (`.env`), jamais hardcodés.
-* **📝 Logging Professionnel** : Système de logs horodatés et hiérarchisés (INFO, ERROR) pour le monitoring.
-* **🛡️ Gestion d'erreurs** : Structure `try/catch` globale pour éviter les crashs silencieux et permettre l'alerting.
-* **🧩 Architecture Modulaire** : Séparation claire entre le lanceur (`main.py`) et la logique métier (`logic.py`).
+* 100% Dockerisé : Fonctionne de manière identique en local, sur un VPS ou sur le Cloud (GCP/AWS).
+* Sécurité native : Gestion des secrets (API Keys, Mots de passe) via variables d'environnement (`.env`), jamais hardcodés.
+* Logging Professionnel : Système de logs horodatés et hiérarchisés (INFO, ERROR) pour le monitoring.
+* Gestion d'erreurs : Structure `try/catch` globale pour éviter les crashs silencieux et permettre l'alerting.
+* Architecture Modulaire : Séparation claire entre le lanceur (`main.py`) et la logique métier (`logic.py`).
 
 ##Stack Technique
 
@@ -53,7 +53,8 @@ docker build -t mon-bot-auto .
 
 Bash
 docker run --env-file .env mon-bot-auto
-👨‍💻 Personnalisation
+
+Personnalisation
 Toute la logique métier se trouve dans src/logic.py. Pour adapter ce bot à un nouveau besoin (ex: Scraper un site immo, Appel API Finance) :
 
 Modifiez la fonction executer_tache() dans src/logic.py.
